@@ -1,0 +1,23 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 20px 60px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+ul {
+  padding: 10px 0px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #0DAFD5;
+}
