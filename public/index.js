@@ -1,6 +1,9 @@
-var txt;
-var dict = {};
-var keys = [];
+var txt; //sample text
+var dict = {}; //key-value pair of word-frequency
+var keys = []; //unique words
+var summary; //summary text from server
+var sortedSummary; //sorted summary from server
+var keyType = /.*/; //tracking active tab (noun, verb etc)
 var buffer = [
     "the",
     "and",
@@ -21,11 +24,8 @@ var buffer = [
     "by",
     "at",
     "on"
-];
+]; //buffer words
 // var buffer = [];
-var summary;
-var sortedSummary;
-var keyType = /.*/;
 
 function preload() {
     txt = loadStrings("sampletext.txt");
